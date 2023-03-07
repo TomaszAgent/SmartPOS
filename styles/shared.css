@@ -1,0 +1,8 @@
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.semi-transparent-text {
+  color: var(--semi-transparent-font);
+}

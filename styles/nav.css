@@ -1,0 +1,126 @@
+nav {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 16vmax;
+  height: 100vmin;
+  padding: 4vmin 2% 1% 1%;
+  box-sizing: border-box;
+  align-items: center;
+  background-image: var(--background-color);
+}
+
+nav > .logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 5%;
+  margin-bottom: 10%;
+}
+
+nav > .logo > img {
+  height: 100%;
+}
+
+nav > .menu {
+  height: 50%;
+  width: 100%;
+}
+
+nav > .menu > .other-options > button,
+nav > .menu > .main-options > button {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  height: 5vmin;
+}
+
+nav > .menu > .other-options > button:hover,
+nav > .menu > .main-options > button:hover {
+  background-color: var(--hover-yellow);
+}
+
+nav > .menu > .other-options > button > img,
+nav > .menu > .main-options > button > img {
+  height: 75%;
+  margin-right: 10%;
+}
+
+nav > .menu > .other-options > button > span,
+nav > .menu > .main-options > button > span {
+  font-weight: bold;
+}
+
+nav > .menu > .main-options {
+  gap: 10px;
+  height: 60%;
+}
+
+nav > .menu > .main-options > .FD {
+  background-color: var(--highlight);
+}
+
+nav > .menu > .other-options {
+  gap: 10px;
+  margin-top: 4vmin;
+  height: 40%;
+}
+
+nav > .menu > .other-options > span {
+  padding-left: 5%;
+}
+
+nav > .menu > .other-options > .notifications > .notifications-quantity {
+  background-color: var(--highlight);
+  height: 3vmin;
+  width: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 16%;
+}
+
+nav > .profile {
+  background-color: var(--upper-element);
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 28%;
+  width: 100%;
+  margin-top: 29%;
+}
+
+nav > .profile > img {
+  height: 24%;
+  width: 26%;
+  border-radius: 50%;
+}
+
+nav > .profile > .details {
+  width: 80%;
+}
+
+nav > .profile > .details > p {
+  text-align: center;
+}
+
+nav > .profile > .details > button {
+  width: 100%;
+  height: 25%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lower-element);
+}
+
+nav > .profile > .details > button:hover {
+  background-color: var(--hover-gray);
+}
+
+nav > p {
+  margin: 30px 0 0 0;
+  height: 4%;
+}

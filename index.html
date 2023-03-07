@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/profile-window.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/configs/config.css" />
+    <link rel="stylesheet" href="./styles/configs/reset.css" />
+    <link rel="stylesheet" href="./styles/configs/normalize.css" />
+    <script src="./index.js"></script>
+    <title>SmartPOS</title>
+  </head>
+  <body>
+    <nav class="column">
+      <div class="logo"><img src="./assets/logo.png" alt="SmartPOS" /></div>
+      <div class="menu column">
+        <div class="main-options column">
+          <button class="dashboard">
+            <img src="./assets/dashboard.svg" alt="dashboard" />
+            <span>Dashboard</span>
+          </button>
+          <button class="FD">
+            <img src="./assets/F&D.svg" alt="F&D" />
+            <span>Food & Drinks</span>
+          </button>
+          <button class="MSG">
+            <img src="./assets/messages.svg" alt="MSG" />
+            <span>Messages</span>
+          </button>
+          <button class="bills">
+            <img src="./assets/bills.svg" alt="bills" />
+            <span>Bills</span>
+          </button>
+          <button class="settings">
+            <img src="./assets/settings.svg" alt="settings" />
+            <span>Settings</span>
+          </button>
+        </div>
+        <div class="other-options column">
+          <span class="semi-transparent-text">Other</span>
+          <button class="notifications">
+            <img src="./assets/notifications.svg" alt="notifications" />
+            <span>Notifications</span>
+            <div class="notifications-quantity"><span>3</span></div>
+          </button>
+          <button class="support">
+            <img src="./assets/support.svg" alt="support" />
+            <span>Support</span>
+          </button>
+        </div>
+      </div>
+      <div class="profile column">
+        <img src="./assets/pfp.png" alt="profile picture" />
+        <div class="details">
+          <p class="username">Tomasz Zając</p>
+          <p class="status semi-transparent-text">Waiter • 4h 56min</p>
+          <button onclick="profileAppear()"><span>Open profile</span></button>
+        </div>
+      </div>
+      <p class="semi-transparent-text">(C) 2023 SmartPOS App</p>
+    </nav>
+    <main class="column">
+      <div class="topbar">
+        <div class="path">
+          <button class="back">
+            <img src="./assets/arrow.svg" alt="back" />
+          </button>
+          <span class="path-information semi-transparent-text"
+            >Food & Drinks</span
+          >
+          <span class="semi-transparent-text">></span>
+          <span>Burgers</span>
+        </div>
+        <div class="searchbar">
+          <img src="./assets/search.svg" alt="search" />
+          <input type="text" placeholder="Search..." />
+        </div>
+      </div>
+      <div class="content column">
+        <span class="label">Burgers🍔</span>
+        <div class="products">
+          <button class="product column">
+            <img src="./assets/cheeseburger.png" alt="Cheeseburger" />
+            <div class="details">
+              <p>Cheeseburger</p>
+              <p class="semi-transparent-text">150g</p>
+              <p>$3.50</p>
+            </div>
+          </button>
+          <button class="product column">
+            <img src="./assets/chicken-deluxe.png" alt="Chicken-Deluxe" />
+            <div class="details">
+              <p>Chicken-Deluxe</p>
+              <p class="semi-transparent-text">240g</p>
+              <p>$4.25</p>
+            </div>
+          </button>
+          <button class="product column">
+            <img src="./assets/hamburger.png" alt="Hamburger" />
+            <div class="details">
+              <p>Hamburger</p>
+              <p class="semi-transparent-text">320g</p>
+              <p>$4.50</p>
+            </div>
+          </button>
+          <button class="product column">
+            <img src="./assets/big-john.png" alt="Big John" />
+            <div class="details">
+              <p>Big John</p>
+              <p class="semi-transparent-text">650g</p>
+              <p>$8.00</p>
+            </div>
+          </button>
+          <button class="product column">
+            <img src="./assets/spicy-chicken.png" alt="Spicy Chicken" />
+            <div class="details">
+              <p>Spicy Chicken</p>
+              <p class="semi-transparent-text">340g</p>
+              <p>$4.75</p>
+            </div>
+          </button>
+          <button class="product column">
+            <img src="./assets/superstars.png" alt="Superstars" />
+            <div class="details">
+              <p>Superstars</p>
+              <p class="semi-transparent-text">250g</p>
+              <p>$3.50</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </main>
+    <div id="profile-shadow">
+      <div class="profile-window column">
+        <div class="exitbar">
+          <h1>Profile</h1>
+          <span onclick="profileDisappear()" class="exitbutton">&times;</span>
+        </div>
+        <div class="main-info">
+          <div class="profile-picture">
+            <img src="./assets/pfp.png" alt="profile picture" />
+          </div>
+          <div class="profile-details column">
+            <div class="column">
+              <h2>Tomasz Zając</h2>
+              <p>Waiter • 4h 56min</p>
+              <div class="balance">
+                <span>Balance: </span><span class="balance-value">24.61$</span>
+              </div>
+              <button>Log out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

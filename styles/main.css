@@ -1,0 +1,112 @@
+main {
+  width: 84vmax;
+  padding: 4vmin 2% 0 2%;
+  background-image: var(--background-color);
+  border-left: 1px solid var(--border-color);
+}
+
+main > .topbar {
+  background-color: var(--upper-element);
+  height: 5vmin;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main > .topbar > div {
+  display: flex;
+  align-items: center;
+}
+
+main > .topbar > .path > .back {
+  height: 5vmin;
+  width: 5vmin;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lower-element);
+  margin-right: 1vmax;
+}
+
+main > .topbar > .path > .back:hover {
+  background-color: var(--hover-gray);
+}
+
+main > .topbar > .path > .back > img {
+  height: 50%;
+  width: 50%;
+}
+
+main > .topbar > .path > span:nth-child(3) {
+  margin: 0 1vmin;
+}
+
+main > .topbar > .searchbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 15vmax;
+  border-radius: 15px;
+  background-color: var(--lower-element);
+}
+
+main > .topbar > .searchbar > img {
+  height: 2vmin;
+  width: 2vmin;
+  margin: 0 1vmin;
+}
+
+main > .topbar > .searchbar > input {
+  background-color: transparent;
+  border: 0;
+  flex: 1;
+}
+
+main > .content {
+  margin-top: 4vmin;
+}
+
+main > .content > .label {
+  font-size: 40px;
+}
+
+main > .content > .products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  margin-top: 1vmin;
+}
+
+main > .content > .products > .product {
+  background-color: var(--upper-element);
+  height: 23vmax;
+  width: 22.75%;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+main > .content > .products > .product:hover {
+  background-color: var(--hover-gray);
+}
+
+main > .content > .products > .product > img {
+  height: 50%;
+  width: 50%;
+}
+
+main > .content > .products > .product > .details > p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+main > .content > .products > .product > .details > p:nth-of-type(1) {
+  font-size: 25px;
+}
+
+main > .content > .products > .product > .details > p:nth-of-type(3) {
+  color: var(--highlight);
+  font-size: 30px;
+  margin-top: 20px;
+}

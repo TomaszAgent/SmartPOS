@@ -1,0 +1,12 @@
+:root {
+  --background-color: linear-gradient(rgb(255, 255, 255), rgb(248, 248, 248));
+  --border-color: rgb(226, 226, 226);
+  --font-color: black;
+  --semi-transparent-font: rgba(0, 0, 0, 0.5);
+  --lower-element: rgb(248, 248, 248);
+  --upper-element: white;
+  --highlight: rgb(255, 187, 60);
+  --hover-yellow: rgb(255, 201, 100);
+  --hover-gray: rgb(230, 230, 230);
+  --main-font: "Roboto";
+}
