@@ -1,13 +1,15 @@
 main {
-  width: 84vmax;
-  padding: 4vmin 2% 0 2%;
+  width: 84vw;
+  padding: 4vh 2% 0 2%;
   background-image: var(--background-color);
   border-left: 1px solid var(--border-color);
 }
 
 main > .topbar {
   background-color: var(--upper-element);
-  height: 5vmin;
+  height: 5vh;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,9 +20,13 @@ main > .topbar > div {
   align-items: center;
 }
 
+main > .topbar > .path {
+  flex-shrink: 0;
+}
+
 main > .topbar > .path > .back {
-  height: 5vmin;
-  width: 5vmin;
+  height: 5vh;
+  width: 5vh;
   border-radius: 30%;
   display: flex;
   justify-content: center;
@@ -39,32 +45,33 @@ main > .topbar > .path > .back > img {
 }
 
 main > .topbar > .path > span:nth-child(3) {
-  margin: 0 1vmin;
+  margin: 0 1vh;
 }
 
 main > .topbar > .searchbar {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 15vmax;
+  width: 16.75%;
   border-radius: 15px;
   background-color: var(--lower-element);
+  flex-shrink: 1;
 }
 
 main > .topbar > .searchbar > img {
-  height: 2vmin;
-  width: 2vmin;
-  margin: 0 1vmin;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
 }
 
 main > .topbar > .searchbar > input {
   background-color: transparent;
   border: 0;
-  flex: 1;
+  flex-grow: 1;
 }
 
 main > .content {
-  margin-top: 4vmin;
+  margin-top: 4vh;
 }
 
 main > .content > .label {
@@ -73,15 +80,16 @@ main > .content > .label {
 
 main > .content > .products {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 3%;
-  margin-top: 1vmin;
+  gap: 1vh;
+  margin-top: 1vh;
 }
 
 main > .content > .products > .product {
   background-color: var(--upper-element);
-  height: 23vmax;
-  width: 22.75%;
+  height: 44vh;
+  width: 38vh;
   border-radius: 30px;
   justify-content: center;
   align-items: center;
@@ -92,8 +100,8 @@ main > .content > .products > .product:hover {
 }
 
 main > .content > .products > .product > img {
-  height: 50%;
-  width: 50%;
+  height: 21.5vh;
+  width: 17.5vh;
 }
 
 main > .content > .products > .product > .details > p {

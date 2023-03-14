@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1575px) {
+  nav > .menu > .other-options > .notifications > .notifications-quantity {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1215px) {
+  .logo-mobile {
+    display: flex;
+  }
+  main {
+    flex-grow: 1;
+  }
+  nav {
+    width: 6vh;
+    padding: 4vh 1% 1% 1%;
+  }
+  .setting-name,
+  .logo-pc,
+  nav > p,
+  nav > .menu > .other-options > span,
+  nav > .profile {
+    display: none;
+  }
+  nav > .menu > .other-options > .notifications,
+  nav > .menu > .other-options > button,
+  nav > .menu > .main-options > button {
+    justify-content: center;
+  }
+}

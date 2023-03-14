@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/shared.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/media-queries.css" />
     <link rel="stylesheet" href="./styles/configs/config.css" />
     <link rel="stylesheet" href="./styles/configs/reset.css" />
     <link rel="stylesheet" href="./styles/configs/normalize.css" />
@@ -24,40 +25,57 @@
   </head>
   <body>
     <nav class="column">
-      <div class="logo"><img src="./assets/logo.png" alt="SmartPOS" /></div>
+      <div class="logo">
+        <img src="./assets/logo.png" alt="SmartPOS" class="logo-pc" />
+        <img src="./assets/logo-small.png" alt="SmartPOS" class="logo-mobile" />
+      </div>
       <div class="menu column">
         <div class="main-options column">
           <button class="dashboard">
-            <img src="./assets/dashboard.svg" alt="dashboard" />
-            <span>Dashboard</span>
+            <img
+              class="setting-img"
+              src="./assets/dashboard.svg"
+              alt="dashboard"
+            />
+            <span class="setting-name">Dashboard</span>
           </button>
           <button class="FD">
-            <img src="./assets/F&D.svg" alt="F&D" />
-            <span>Food & Drinks</span>
+            <img class="setting-img" src="./assets/F&D.svg" alt="F&D" />
+            <span class="setting-name">Food & Drinks</span>
           </button>
           <button class="MSG">
-            <img src="./assets/messages.svg" alt="MSG" />
-            <span>Messages</span>
+            <img class="setting-img" src="./assets/messages.svg" alt="MSG" />
+            <span class="setting-name">Messages</span>
           </button>
           <button class="bills">
-            <img src="./assets/bills.svg" alt="bills" />
-            <span>Bills</span>
+            <img class="setting-img" src="./assets/bills.svg" alt="bills" />
+            <span class="setting-name">Bills</span>
           </button>
           <button class="settings">
-            <img src="./assets/settings.svg" alt="settings" />
-            <span>Settings</span>
+            <img
+              class="setting-img"
+              src="./assets/settings.svg"
+              alt="settings"
+            />
+            <span class="setting-name">Settings</span>
           </button>
         </div>
         <div class="other-options column">
           <span class="semi-transparent-text">Other</span>
           <button class="notifications">
-            <img src="./assets/notifications.svg" alt="notifications" />
-            <span>Notifications</span>
+            <div>
+              <img
+                class="setting-img"
+                src="./assets/notifications.svg"
+                alt="notifications"
+              />
+              <span class="setting-name">Notifications</span>
+            </div>
             <div class="notifications-quantity"><span>3</span></div>
           </button>
           <button class="support">
-            <img src="./assets/support.svg" alt="support" />
-            <span>Support</span>
+            <img class="setting-img" src="./assets/support.svg" alt="support" />
+            <span class="setting-name">Support</span>
           </button>
         </div>
       </div>

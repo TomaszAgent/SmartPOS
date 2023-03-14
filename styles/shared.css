@@ -6,3 +6,16 @@
 .semi-transparent-text {
   color: var(--semi-transparent-font);
 }
+
+.setting-img {
+  height: 3vh;
+}
+
+.setting-name {
+  font-weight: bold;
+  text-align: center;
+}
+
+.logo-mobile {
+  display: none;
+}

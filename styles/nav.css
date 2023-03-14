@@ -2,9 +2,9 @@ nav {
   position: sticky;
   left: 0;
   top: 0;
-  width: 16vmax;
-  height: 100vmin;
-  padding: 4vmin 2% 1% 1%;
+  width: 16vw;
+  height: 100vh;
+  padding: 4vh 2% 1% 1%;
   box-sizing: border-box;
   align-items: center;
   background-image: var(--background-color);
@@ -14,7 +14,7 @@ nav > .logo {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 5%;
+  height: 5vh;
   margin-bottom: 10%;
 }
 
@@ -33,23 +33,13 @@ nav > .menu > .main-options > button {
   display: flex;
   align-items: center;
   padding: 5%;
-  height: 5vmin;
+  height: 5vh;
+  gap: 1vh;
 }
 
 nav > .menu > .other-options > button:hover,
 nav > .menu > .main-options > button:hover {
   background-color: var(--hover-yellow);
-}
-
-nav > .menu > .other-options > button > img,
-nav > .menu > .main-options > button > img {
-  height: 75%;
-  margin-right: 10%;
-}
-
-nav > .menu > .other-options > button > span,
-nav > .menu > .main-options > button > span {
-  font-weight: bold;
 }
 
 nav > .menu > .main-options {
@@ -63,23 +53,29 @@ nav > .menu > .main-options > .FD {
 
 nav > .menu > .other-options {
   gap: 10px;
-  margin-top: 4vmin;
+  margin-top: 4vh;
   height: 40%;
 }
 
-nav > .menu > .other-options > span {
-  padding-left: 5%;
+nav > .menu > .other-options > .notifications {
+  justify-content: space-between;
+}
+
+nav > .menu > .other-options > .notifications > div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 1vh;
 }
 
 nav > .menu > .other-options > .notifications > .notifications-quantity {
   background-color: var(--highlight);
-  height: 3vmin;
-  width: 3vmin;
+  height: 3vh;
+  width: 3vh;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-left: 16%;
 }
 
 nav > .profile {
@@ -93,8 +89,8 @@ nav > .profile {
 }
 
 nav > .profile > img {
-  height: 24%;
-  width: 26%;
+  height: 10vh;
+  width: 10vh;
   border-radius: 50%;
 }
 
